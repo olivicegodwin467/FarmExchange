@@ -51,7 +51,7 @@ function NavBar() {
 
       {/* Footer */}
       <footer style={{ position: "fixed", bottom: 0, width: "100%", backgroundColor: "#2d3748", color: "#fff", textAlign: "center", padding: "1rem" }}>
-        <p>&copy; CUNGA SOFTWARE 2025 All rights reserved.</p>
+        <p>&copy; CUNGA SOFTWARE 2025 All rights reserved | Email:cungasoftware@gmail.com, Phone: +250 789 818 053.</p>
       </footer>
     </div>
   );
