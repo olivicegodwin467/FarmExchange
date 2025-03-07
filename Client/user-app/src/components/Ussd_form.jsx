@@ -7,7 +7,7 @@ function Ussd_form() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const res = await fetch("http://localhost:5000/api/ussd", {
+        const res = await fetch("http://localhost:8000/api/agri-ussd", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

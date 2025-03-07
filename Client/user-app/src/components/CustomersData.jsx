@@ -7,7 +7,7 @@ function CustomersData() {
     const [searchQuery, setSearchQuery] = useState("");
 
     const getUsers = () => {
-      Axios.get('http://localhost:5000/api/data')
+      Axios.get('http://localhost:8000/api/customer/fetch')
         .then((response) => {
           setUsers(response.data);
         })

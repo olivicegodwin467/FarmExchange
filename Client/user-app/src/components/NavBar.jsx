@@ -24,6 +24,9 @@ function NavBar() {
             <li><Link to="/home" className="hover:text-gray-300">Home</Link></li>
             <li><Link to="/market" className="hover:text-gray-300">Agri Market</Link></li>
             <li><Link to="/chat" className="hover:text-gray-300">Chat</Link></li>
+            <li><Link to="/users" className="hover:text-gray-300">Users</Link></li>
+            <li><Link to="/about" className="hover:text-gray-300">About</Link></li>
+            <li><Link to="/services" className="hover:text-gray-300">Services</Link></li>
             <li><Link to="/products" className="hover:text-gray-300">Products</Link></li>
             <li><Link to="/contacts" className="hover:text-gray-300">Contacts</Link></li>
             <li><Link to="/ussd" className="hover:text-gray-300">USSD</Link></li>

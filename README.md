@@ -1,55 +1,108 @@
-FarmExchange is a web platform designed to connect farmers and agricultural stakeholders, enabling them to exchange goods, services, and information. It aims to streamline the process of agricultural trade and communication, fostering better connections between farmers, buyers, and sellers. Whether you're looking to sell surplus produce, buy agricultural products, or access market information, FarmExchange serves as a one-stop solution.
+📌 FarmExchange Rwanda - USSD API
+A USSD-based system built with Express.js and MongoDB to help farmers register, check market trends, update prices, and sell their produce in Rwanda.
 
-Features
-User Authentication: Secure login and signup for users.
-Agri Market: View and post agricultural products for sale or purchase.
-Chat: Real-time messaging between buyers, sellers, and other users.
-Products: A marketplace for agricultural goods.
-Contacts: View and manage contacts within the community.
-USSD Integration: Allows users to access services through a USSD interface.
-API: Expose an API to interact with external systems and services.
-Tech Stack
-Frontend: React.js, Tailwind CSS
-Backend: Node.js, Express
-Database: MongoDB
-Authentication: JWT (JSON Web Tokens)
-Payment Integration: PayPal, MTN Mobile Money
-Deployment: GitHub, Netlify (or your chosen platform)
-Installation
-To run the project locally:
+📜 Features
+✅ User Registration (via phone number)
+✅ Market Price Lookup
+✅ Sell Agricultural Produce
+✅ Track Transactions
+✅ Contact Support
 
-Clone the repository:
-
+📂 Project Structure
 bash
 Copy
 Edit
-git clone https://github.com/olivicegodwin467/FarmExchange.git
-cd FarmExchange
-Install dependencies:
-
-bash
+/farmexchange-ussd
+│-- /models
+│   ├── userModel.js         # User schema
+│   ├── transactionModel.js  # Transaction schema
+│-- /controllers
+│   ├── ussdController.js    # USSD logic handler
+│-- /routes
+│   ├── ussdRoutes.js        # Routes for USSD API
+│-- server.js                # Express server setup
+│-- config.js                # Database configuration
+│-- README.md                # Project documentation
+🛠 Tech Stack
+Backend: Node.js, Express.js
+Database: MongoDB
+Deployment: ngrok (for local testing), AWS/Heroku (for production)
+🚀 Getting Started
+1️⃣ Clone the Repository
+sh
+Copy
+Edit
+git clone https://github.com/yourusername/farmexchange-ussd.git
+cd farmexchange-ussd
+2️⃣ Install Dependencies
+sh
 Copy
 Edit
 npm install
-Start the development server:
+3️⃣ Set Up Environment Variables
+Create a .env file and add:
 
-bash
+ini
+Copy
+Edit
+MONGO_URI=mongodb+srv://your-db-connection
+PORT=3000
+4️⃣ Start the Server
+sh
 Copy
 Edit
 npm start
-Navigate to http://localhost:3000 in your browser to view the app.
+5️⃣ Expose Local Server (For Testing)
+sh
+Copy
+Edit
+npx ngrok http 3000
+Copy the ngrok URL and use it in your USSD gateway settings.
 
-Usage
-Home: Browse through the latest listings, news, and updates.
-Agri Market: Post and view available agricultural products.
-Chat: Communicate directly with other users.
-Products: List products available for sale or needed.
-Contacts: Keep track of important contacts within the agricultural community.
-Contributing
-Contributions are welcome! If you'd like to contribute to the project, follow these steps:
+🛠 API Endpoints
+Method	Endpoint	Description
+POST	/api/ussd	Handles USSD logic
+📱 USSD Flow Example
+User Dials *123#
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-branch).
-Create a pull request.
+markdown
+Copy
+Edit
+CON Welcome to FarmExchange Rwanda 🌿
+1. Register
+2. Check Market Trends
+3. Price Updates
+4. Sell Produce
+5. Contact Support
+User Selects 1 (Register)
+
+mathematica
+Copy
+Edit
+CON Enter your Phone Number:
+User Enters Phone Number
+
+yaml
+Copy
+Edit
+CON Enter your Location:
+User Completes Registration
+
+sql
+Copy
+Edit
+END Registration Successful! ✅
+🛠 Contributing
+Want to improve this project?
+
+Fork the repo
+Create a new branch (feature-xyz)
+Commit your changes (git commit -m "Added xyz feature")
+Push & create a Pull Request
+📄 License
+This project is open-source under the MIT License.
+
+📞 Contact: +250 789 818 053
+👤 CUNGA SOFTWARE
+📧 Email: cungasoftware@gmail.com
+🌍 Rwanda
